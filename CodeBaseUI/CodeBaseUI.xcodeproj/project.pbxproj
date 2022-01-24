@@ -56,10 +56,10 @@
 			children = (
 				A64265C72799474900977F83 /* AppDelegate.swift */,
 				A64265C92799474900977F83 /* SceneDelegate.swift */,
+				A64265DB279A369000977F83 /* HomeViewController.swift */,
 				A64265D02799474D00977F83 /* Assets.xcassets */,
 				A64265D22799474D00977F83 /* LaunchScreen.storyboard */,
 				A64265D52799474D00977F83 /* Info.plist */,
-				A64265DB279A369000977F83 /* HomeViewController.swift */,
 			);
 			path = CodeBaseUI;
 			sourceTree = "<group>";
