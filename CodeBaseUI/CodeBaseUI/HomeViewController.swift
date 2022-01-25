@@ -18,9 +18,26 @@ class HomeViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
+        self.setUpNavigationController()
         self.setupLayout()
     }
     
+    // option + command + left = 해당 블럭 접기
+    
+    func setUpNavigationController() {
+        // 네비게이션 설정
+        navigationController?.navigationBar.backgroundColor = .clear
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.hidesBarsOnSwipe = true
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "house"), style: .plain, target: nil, action: nil)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "person"), style: .plain, target: nil, action: nil)
+        
+    }
+    
+    // MARK: Layout
     private func setupLayout() {
         
         // constraint를 추가하기 전에 SubView에 추가
